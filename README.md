@@ -2,16 +2,16 @@
 
 Welcome to my GitHub repository! This is where I showcase my personal portfolio website, which highlights my professional journey and projects.
 
-*Overview*
+*Overview:*
 
 This project serves as an online resume and portfolio, providing an insight into my skills, experiences, and achievements. The website is designed to evolve as I take on new projects, allowing visitors to stay updated on my latest work.
 
-*Features*
+*Features:*
 
 Resume: Explore my educational background, skills, and work experience.
 Projects: View details about the projects I've worked on, with links to their respective repositories and live demos.
 
-*Technologies Used*
+*Technologies Used:*
 
 HTML5
 CSS3
