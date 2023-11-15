@@ -1,0 +1,144 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  background-color: #333; 
+  color: #fff; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+header {
+  position:relative;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 0px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.header-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  padding-right: 10px;
+  color: #828282;
+}
+
+/* Add a hover effect */
+.header-icons a:hover {
+  color: #007bff; 
+}
+
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .header-icons a {
+  color: #fff;
+}
+section {
+  margin-bottom: 30px;
+}
+
+
+.language, .programming-languages, .general-skills{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.cards-container {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.cards {
+  background-color: #c5c5c5;
+  border: 1px solid #414141;
+  border-radius: 15px;
+  padding: 15px;
+  margin:auto;
+  min-width: 300px;
+}
+
+.navigation-div {
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.15em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;  
+}
+.navigation-buttons:active{
+  box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+@media (min-width: 768px) {
+  .navigation-buttons {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.darkmode-button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.15em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;  
+}
+.darkmode-button:active{
+  box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+@media (min-width: 768px) {
+  .darkmode-button {
+    padding: 0.25em 0.75em;
+  }
+}
+
