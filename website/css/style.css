@@ -18,12 +18,13 @@ h1 {
 }
 
 .header-icons {
-  position: absolute;
+  position:absolute;
   top: 0;
   right: 0;
   display: flex;
   padding-right: 10px;
   padding-left: 10px;
+  align-self: auto;
 }
 
 .header-icons a {
@@ -140,5 +141,9 @@ section {
   .darkmode-button {
     padding: 0.25em 0.75em;
   }
+}
+
+section{
+  text-align: center;
 }
 
