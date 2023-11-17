@@ -1,15 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 20px;
-  background-color: #333; 
-  color: #fff; 
+  background-color: #1c1c1c; 
+  color: #cececc; 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
 header {
   position:relative;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #cecece;
   margin-bottom: 0px;
 }
 
@@ -27,7 +27,13 @@ h1 {
   align-self: auto;
 }
 
-.header-icons a {
+.link-icons{
+  padding-right: 10px;
+  padding-left: 10px;
+  align-self: auto;
+}
+
+.link-icons a {
   margin-left: 10px;
   text-decoration: none;
   font-size: 24px;
@@ -35,23 +41,26 @@ h1 {
   color: #828282;
 }
 
-/* Add a hover effect */
-.header-icons a:hover {
-  color: #007bff; 
+.link-icons a:hover {
+  color: #89CFF0; 
 }
 
 body.light-mode {
-  background-color: #fff;
-  color: #333;
+  background-color: #cecece;
+  color: #1c1c1c;
 }
 
 body.dark-mode {
-  background-color: #333;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #cecece;
+}
+
+body.light-mode header{
+  border-bottom: 2px solid #1c1c1c;
 }
 
 body.dark-mode .header-icons a {
-  color: #fff;
+  color: #cecece;
 }
 section {
   margin-bottom: 30px;
@@ -71,12 +80,14 @@ section {
 }
 
 .cards {
-  background-color: #c5c5c5;
+  background-color: #9d9d9d;
   border: 1px solid #414141;
   border-radius: 15px;
   padding: 15px;
   margin:auto;
-  min-width: 300px;
+  width: 600px;
+  height: 250px;
+  overflow:auto;
 }
 
 .navigation-div {
@@ -147,3 +158,19 @@ section{
   text-align: center;
 }
 
+#profile-div {
+  display: flex;
+  flex-direction: row; 
+}
+
+.profile-text {
+  flex: 1; 
+  margin: 200px; 
+}
+
+.pb {
+  margin: 20px;
+}
+#profile{
+  margin-bottom: 200px;
+}
