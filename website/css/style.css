@@ -1,14 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
+  height: auto;
   margin: 20px;
-  background-color: #1c1c1c; 
-  color: #cececc; 
+  background-color: #1c1c1c;
+  color: #cececc;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
 header {
-  position:relative;
+  position: relative;
   border-bottom: 2px solid #cecece;
   margin-bottom: 0px;
 }
@@ -18,7 +19,7 @@ h1 {
 }
 
 .header-icons {
-  position:absolute;
+  position: absolute;
   top: 0;
   right: 0;
   display: flex;
@@ -27,7 +28,7 @@ h1 {
   align-self: auto;
 }
 
-.link-icons{
+.link-icons {
   padding-right: 10px;
   padding-left: 10px;
   align-self: auto;
@@ -42,7 +43,7 @@ h1 {
 }
 
 .link-icons a:hover {
-  color: #89CFF0; 
+  color: #89CFF0;
 }
 
 body.light-mode {
@@ -55,22 +56,26 @@ body.dark-mode {
   color: #cecece;
 }
 
-body.light-mode header{
+body.light-mode header {
   border-bottom: 2px solid #1c1c1c;
 }
 
 body.dark-mode .header-icons a {
   color: #cecece;
 }
+
 section {
   margin-bottom: 30px;
 }
 
 
-.language, .programming-languages, .general-skills{
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 10px;
+.language,
+.programming-languages,
+.general-skills {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 10px;
+  list-style: none;
 }
 
 .cards-container {
@@ -84,14 +89,14 @@ section {
   border: 1px solid #414141;
   border-radius: 15px;
   padding: 15px;
-  margin:auto;
+  margin: auto;
   width: 600px;
   height: 250px;
-  overflow:auto;
+  overflow: auto;
 }
 
 .navigation-div {
-  margin:auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,63 +119,234 @@ section {
   position: relative;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;  
+  touch-action: manipulation;
 }
-.navigation-buttons:active{
+
+.navigation-buttons:active {
   box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
+  top: 5px;
+  left: 5px;
 }
+
 @media (min-width: 768px) {
   .navigation-buttons {
     padding: 0.25em 0.75em;
   }
 }
 
-.darkmode-button{
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    cursor: pointer;
-    border: 3px solid;
-    padding: 0.15em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;  
+.darkmode-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.15em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-.darkmode-button:active{
+
+.darkmode-button:active {
   box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
+  top: 5px;
+  left: 5px;
 }
+
 @media (min-width: 768px) {
   .darkmode-button {
     padding: 0.25em 0.75em;
   }
 }
 
-section{
+section {
   text-align: center;
 }
 
 #profile-div {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 .profile-text {
-  flex: 1; 
-  margin: 200px; 
+  flex: 1;
+  margin: auto;
 }
 
 .pb {
   margin: 20px;
 }
-#profile{
+
+#profile {
   margin-bottom: 200px;
+}
+
+.sidebar i {
+  color: #fff;
+height: 60px;
+min-width: 50px;
+font-size: 28px;
+text-align: center;
+line-height: 60px;
+}
+
+.sidebar .nav-list {
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.sidebar li .tooltip{
+  position: absolute;
+  top: -20px;
+  left: calc(100%-15px);
+  z-index: 3;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  left: 105%;
+  transform: translateY(-50%);
+}
+
+.sidebar.open li .tooltip{
+  display: none;
+}
+
+.sidebar input{
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #1d1d31;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #11101d;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5 ease;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo-details .icon {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5 ease;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+  opacity: 1;
+}
+
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #11101d;
+}
+
+.sidebar li a:hover {
+  background: #fff;
+}
+
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+  transition: all 0.5s ease;
+  color: #11101d;
+}
+
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 12px;
 }
