@@ -21,7 +21,7 @@ function updateVisibility() {
 const body = document.body;
 
 function toggleDarkMode() {
-  body.classList.toggle('light-mode');
+  body.classList.toggle('dark-mode');
 }
 // Show the first card initially
 updateVisibility();
