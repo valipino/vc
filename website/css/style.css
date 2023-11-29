@@ -698,3 +698,16 @@ line-height: 60px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.word {
+  margin: auto;
+  color: #fb6666;
+  text-shadow: 1px 1px #222324, 1px 1px #222324, 1px 1px #222324;
+  white-space: normal;
+  display: inline;
+}
+
+.slogan{
+  text-align: left;
+  padding-left: 10rem;
+}
