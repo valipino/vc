@@ -180,6 +180,7 @@ section {
 
 .pb {
   margin: 20px;
+  border-radius: 15px;
 }
 
 #profile {
@@ -275,7 +276,7 @@ body.light-mode .sidebar .logo-details .logo_name{
 }
 
 body.light-mode .sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+body.lightmode .sidebar.open .logo-details .logo_name {
   opacity: 1;
 }
 
@@ -328,7 +329,7 @@ body.light-mode .sidebar.open li a .links_name{
 }
 
 body.light-mode .sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+body.lightmode .sidebar li a:hover i {
   transition: all 0.5s ease;
   color: #1c1c1c;
 }
@@ -710,4 +711,5 @@ line-height: 60px;
 .slogan{
   text-align: left;
   padding-left: 10rem;
+  padding-right: 10rem;
 }

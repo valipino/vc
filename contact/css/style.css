@@ -157,7 +157,7 @@ body.light-mode .sidebar .logo-details .logo_name{
 }
 
 body.light-mode .sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+body.light-mode .sidebar.open .logo-details .logo_name {
   opacity: 1;
 }
 
@@ -210,7 +210,7 @@ body.light-mode .sidebar.open li a .links_name{
 }
 
 body.light-mode .sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+body.light-mode .sidebar li a:hover i {
   transition: all 0.5s ease;
   color: #1c1c1c;
 }
@@ -546,7 +546,7 @@ line-height: 60px;
   transition: var(--transition);
 }
 
-/* actions */
+/* Contact darkmode */
 
 .theme-switch__checkbox:checked + .theme-switch__container {
   background-color: var(--container-night-bg);
@@ -582,10 +582,9 @@ line-height: 60px;
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 
-/* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -596,44 +595,101 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #fb6666;
+  color: #1c1c1c;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #fd4545;
 }
 
-/* Style the container/contact section */
 .container {
+  border: 5px solid #cecece;
   margin-top: 10px;
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border-radius: 10px;
+  background-color: #2d2d2d;
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
+.container h2 {
+  color: #cecece;
+}
+.container p {
+  color: #cecece;
+}
+
+.container label {
+  color: #cecece;
+}
+
 .column {
   float: left;
-  width: 50%;
+  width: 90%;
   margin-top: 6px;
   padding: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.content-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Contact lightmode */
+
+body.light-mode input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body.light-mode input[type=submit] {
+  background-color: #fb6666;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+body.light-mode .container h2 {
+  color: #1c1c1c;
+}
+body.light-mode .container p {
+  color: #1c1c1c;
+}
+
+body.light-mode .container label {
+  color: #1c1c1c;
+}
+
+body.light-mode input[type=submit]:hover {
+  background-color: #fd4545;
+}
+
+body.light-mode .container {
+  border: 5px solid #1c1c1c;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
 }

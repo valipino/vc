@@ -4,8 +4,6 @@ function toggleDarkMode() {
 
   // Toggle the 'light-mode' class on the body
   body.classList.toggle('light-mode');
-
-  console.log("Aufgerufen");
 }
 
 
@@ -17,10 +15,10 @@ closeBtn.addEventListener("click", () => {
 });
 
 
-function menuBtnChange(){
-  if(sidebar.classList.contains("open")){
-    closeBtn.classList.replace("fa-solid fa-bars", "fa-solid fa-bars-staggered");
+function menuBtnChange() {
+  if (sidebar.classList.contains("open")) {
+    $("#btn").removeClass("fa-bars").addClass("fa-bars-staggered");
   } else {
-    closeBtn.classList.replace("fa-solid fa-bars-staggered", "fa-solid fa-bars");
+    $("#btn").removeClass("fa-bars-staggered").addClass("fa-bars");
   }
 }
