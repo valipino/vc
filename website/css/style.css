@@ -815,3 +815,40 @@ line-height: 60px;
 .cplus {width: 60%; background-color: #fb6666;} 
 .xml {width: 60%; background-color: #fb6666;} 
 .r {width: 40%; background-color: #fb6666;} 
+
+
+p1{
+  font-weight: bold;
+}
+
+.skillbar{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.languagestable {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.languagestable td, .languagestable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.languagestable tr:nth-child(-n + 1){background-color: #f2f2f2;}
+
+.languagestable tr:hover {background-color: #ddd;}
+
+.languagestable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #cecece;
+  color: #1c1c1c;
+}
