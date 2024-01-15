@@ -1,23 +1,3 @@
-let currentIndex = 0;
-const cards = document.querySelectorAll('.cards');
-const totalCards = cards.length;
-
-function showPrevious() {
-  currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-  updateVisibility();
-}
-
-function showNext() {
-  currentIndex = (currentIndex + 1) % totalCards;
-  updateVisibility();
-}
-
-function updateVisibility() {
-  cards.forEach((card, index) => {
-    card.style.display = index === currentIndex ? 'block' : 'none';
-  });
-}
-
 
 function toggleDarkMode() {
   // Select the body element
@@ -26,11 +6,9 @@ function toggleDarkMode() {
   // Toggle the 'light-mode' class on the body
   body.classList.toggle('light-mode');
 
-  console.log("Aufgerufen");
 }
 
 // Show the first card initially
-updateVisibility();
 
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
