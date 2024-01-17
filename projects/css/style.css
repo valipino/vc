@@ -649,14 +649,14 @@ body {
   }
 
 
-#image-track > .image {
+#video-track > .video {
     width: 70vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: 100% 50%;
 }
 
-#image-track{
+#video-track{
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -664,3 +664,16 @@ body {
     top: 50%;
     transform: translate(0%, -50%);
 }
+
+.expanded {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+  object-fit: contain; /* Added this line */
+}
+
+.project-description {
+  margin-top: 20px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+ }

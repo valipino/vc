@@ -25,7 +25,7 @@ function toggleDarkMode() {
   }
 
 
-const track = document.getElementById("image-track");
+const track = document.getElementById("video-track");
 
 window.onmousedown = e => {
     track.dataset.mouseDownAt = e.clientX;
@@ -52,12 +52,48 @@ window.onmousemove = e => {
     }, {duration: 1200, fill: "forwards"})
 
 
-    for(const image of track.getElementsByClassName("image")){
-        image.animate({
+    for(const video of track.getElementsByClassName("video")){
+        video.animate({
             objectPosition: `${100+nextPercentage}% center`
         }, {duration: 1200, fill: "forwards"})
         
     }
 }
+
+let videos = document.querySelectorAll('.video');
+let texts = document.querySelectorAll('.project-description');
+
+// Function to collapse all videos
+function collapseAllVideosAndHideAllTexts() {
+ videos.forEach((video, index) => {
+     video.classList.remove('expanded');
+     texts[index].style.display = 'none';
+ });
+}
+
+// Event listener for video clicks
+videos.forEach((video, index) => {
+ video.addEventListener('click', (event) => {
+     // Stop the event from bubbling up to the document
+     event.stopPropagation();
+
+     // Remove the 'expanded' class from all videos
+     collapseAllVideosAndHideAllTexts();
+     // Add the 'expanded' class to the clicked video
+     video.classList.add('expanded');
+     texts[index].style.display = 'block';
+ });
+});
+
+// Event listener for document clicks
+document.addEventListener('click', () => {
+ // Collapse all videos
+ collapseAllVideosAndHideAllTexts();
+});
+
+
+
+
+
 
 
