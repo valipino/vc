@@ -649,7 +649,7 @@ body {
   }
 
 
-#video-track > .video {
+#video-track > .video-container  > .video {
     width: 70vmin;
     height: 56vmin;
     object-fit: cover;
@@ -666,14 +666,19 @@ body {
 }
 
 .expanded {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
   object-fit: contain; /* Added this line */
 }
 
 .project-description {
-  margin-top: 20px;
+  display: none;
+  text-align: center;
   font-size: 1.2em;
   transition: transform 0.3s ease-in-out;
   font-family: "Open Sans", sans-serif;
+ }
+
+ .video.expanded ~ .project-description {
+  display: block;
  }
