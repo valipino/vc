@@ -26,7 +26,7 @@ function menuBtnChange() {
   }
 }
 
-var words = ['a computer science student.', 'a software engineer.', 'experienced in radio journalism.', 'experienced in bartending.', 'strong in social skills.'],
+var words = ['a computer science student.', 'a software engineer.', 'a tutor for Java Programming.', 'a experienced radio journalist.', 'a Team Player.'],
     part,
     i = 0,
     offset = 0,
