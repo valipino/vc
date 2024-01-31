@@ -16,6 +16,7 @@ Projects: View details about the projects I've worked on, with links to their re
 HTML5
 CSS3
 JavaScript
+Python
 
 Feel free to explore the code and use it as a reference for your own projects. If you have any questions or suggestions, don't hesitate to reach out.
 
