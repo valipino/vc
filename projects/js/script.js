@@ -90,10 +90,3 @@ document.addEventListener('click', () => {
  // Collapse all videos
  collapseAllVideosAndHideAllTexts();
 });
-
-
-
-
-
-
-
