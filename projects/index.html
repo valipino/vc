@@ -87,19 +87,134 @@
 </div>
 
 <div class="project-text">
-  <div id="text-0" class="project-description" style="display: none;">Text for video 0</div>
-  <div id="text-1" class="project-description" style="display: none;">Text for video 1</div>
-  <div id="text-2" class="project-description" style="display: none;">Text for video 2</div>
-  <div id="text-3" class="project-description" style="display: none;">Text for video 3</div>
-  <div id="text-4" class="project-description" style="display: none;">Text for video 4</div>
-</div>
+  <div id="text-0" class="project-description" style="display: none;">Mein Projekt im Rahmen des Fachs "Computergrafik und Bildverarbeitung" umfasst 
+    die Erstellung einer interaktiven 3D-Szene mithilfe der PyOpenGL-Bibliothek in Python. 
+    Das Ziel besteht darin, verschiedene grundlegende 3D-Objekte in der Szene zu präsentieren und durch Benutzerinteraktion steuerbar zu machen.
 
-<!-- <div id="video-track" data-mouse-down-at="0" data-prev-percentage="0">
- <div class="video-container">
-    <video class="video" src="../3D-Szenengrafik.mov" draggable="false" autoplay loop muted></video>
-    <div id="text-0" class="project-description">Text for video 0</div>
- </div>
-</div> -->
+    Die Szene enthält einen Torus, einen Würfel und eine Teekanne. Diese Objekte werden mithilfe von OpenGL-Funktionen wie 
+    'glutSolidTorus', 'glutSolidCube' und 'glutSolidTeapot' gerendert. Zudem wurde die Beleuchtung in der Szene implementiert, 
+    wobei ein Punktlicht verwendet wird, um die Objekte zu beleuchten.
+    
+    Die Benutzerinteraktion ermöglicht es, die Szene zu erkunden. Die Mausbewegung steuert die Rotation der Szene, 
+    während die rechte Maustaste für das Zoomen verwendet wird. Tastatureingaben ermöglichen die Änderung der Blickrichtung und des Zoomlevels.
+    
+    Das Projekt demonstriert nicht nur die Anwendung von 3D-Grafiken und OpenGL, sondern auch das Verständnis von Beleuchtungseffekten,
+     Materialien und Transformationen in einer 3D-Szene. Die Umsetzung erfolgte unter Berücksichtigung der im Fach vermittelten 
+     theoretischen Konzepte und praktischen Übungen.</div>
+  <div id="text-1" class="project-description" style="display: none;">Das vorliegende Projekt im Fach "Computergrafik und Bildverarbeitung" basiert auf meinem eigenen Code 
+    für eine Mini-Zeichenanwendung namens "Mini Draw". Die Grundkonzepte der Funktionen wurden im Unterricht erworben und anschließend in diesem Projekt umgesetzt.
+
+    Die Anwendung ermöglicht das Zeichnen von Punkten, Linien, Kreisen und Bezier-Kurven auf einer Tkinter-Leinwand. 
+    Benutzer können die Farbe der Zeichnungen auswählen, die Sichtbarkeit von Punkten und Kontrollpunkten umschalten, 
+    das Canvas zoomen und mit dem Mausrad in das Canvas zeichnen. Es gibt auch die Möglichkeit, gefüllte Polygone zu erstellen.
+    
+    Ein herausragender Aspekt des Projekts ist die Implementierung von Bezier-Kurven, die durch das Klicken 
+    und Ziehen von Kontrollpunkten erstellt und bearbeitet werden können. Dabei werden die Bernstein-Polynome verwendet, 
+    um die Punkte auf der Bezier-Kurve zu berechnen. Trotz intensiver Bemühungen gibt es einen ungelösten Bug: 
+    Wenn das Polygon eine Bezier-Kurve enthält, wird diese beim Ausmalen des Polygons nicht erkannt und daher ignoriert.
+    
+    Die Anwendung demonstriert die Anwendung von 2D-Grafiken und Interaktionen in Tkinter. 
+    Der Code ist gut strukturiert und verwendet Klassen für die Anwendung und Funktionen für die Zeichenoperationen. 
+    Der Einsatz von Farbauswahl, Mausinteraktion und Zoom macht die Anwendung vielseitig und benutzerfreundlich. 
+    Der ungelöste Bug, obwohl vorhanden, zeigt die Herausforderungen und den Lernprozess bei der Fehlerbehebung in komplexeren Projekten auf.</div>
+  <div id="text-2" class="project-description" style="display: none;">Dieses selbst erstellte Projekt im Rahmen der Vorlesung "Computergrafik und Bildverarbeitung" präsentiert ein Bildbearbeitungstool, 
+    das mithilfe der Python-Bibliotheken Pillow (PIL) und Tkinter entwickelt wurde. 
+    Die Grundkonzepte und Funktionen wurden im Verlauf der Vorlesung und Übungen erworben und in diesem Tool angewendet.
+
+    Das Tool unterstützt verschiedene Bildbearbeitungsoperationen, die über die Kommandozeile eingegeben werden können. 
+    Die Implementierung verwendet die argparse-Bibliothek, um die Eingabeparameter zu parsen und entsprechende Bearbeitungen durchzuführen. 
+    Folgende Bildbearbeitungsfunktionen sind verfügbar:
+    
+    Threshold: Setzt einen Schwellenwert für das Bild.
+    Brightness: Passt die Helligkeit des Bildes an.
+    Contrast: Passt den Kontrast des Bildes an.
+    Blur: Führt einen Weichzeichnungsfilter auf das Bild aus.
+    Sharpen: Schärft das Bild mithilfe eines Filterkernels.
+    Saturation: Ändert die Sättigung des Bildes.
+    Channelchange: Vertauscht die Farbkanäle des Bildes basierend auf einer vorgegebenen Reihenfolge.
+    Colormode: Ändert den Farbmodus des Bildes.
+
+    Das Tool ermöglicht die Kombination mehrerer Bearbeitungsschritte in einer einzigen Ausführung, 
+    indem die entsprechenden Parameter über die Kommandozeile angegeben werden.
+    
+    Die Implementierung der Bildbearbeitungsfunktionen erfolgt mithilfe von Schleifen und Pixelmanipulationen in den Bilddaten. 
+    Die Benutzeroberfläche wird durch die Tkinter-Bibliothek bereitgestellt, wobei das bearbeitete Bild direkt im GUI angezeigt wird.
+    
+    Die Verwendung der argparse-Bibliothek ermöglicht eine flexible und benutzerfreundliche Steuerung des Bildbearbeitungstools 
+    über die Kommandozeile. Das Projekt zeigt die Anwendung von Kenntnissen in Bildverarbeitung und Programmierung und bietet die Möglichkeit,
+     grundlegende Bildbearbeitungsfunktionen auf einfache Weise zu kombinieren und anzuwenden.</div>
+  <div id="text-3" class="project-description" style="display: none;">Projektbeschreibung:
+
+    Dieses Projekt im Bereich Computergrafik und Bildverarbeitung wurde im Rahmen einer Vorlesung und Übung entwickelt. Es nutzt die Programmiersprache Python und die Bibliotheken Pygame, NumPy, Pillow (PIL), und OpenGL. Ziel des Projekts ist die Darstellung und Rotation einer texturierten 3D-Kugel in einem interaktiven Fenster.
+    
+    ### Umgesetzte Funktionen:
+    
+    1. **Shader-Programmierung:** Das Projekt verwendet Vertex- und Fragment-Shader für die Darstellung und Manipulation der 3D-Objekte.
+    
+    2. **Texturierung:** Eine Textur (hier "test.jpeg") wird auf die 3D-Kugel gemappt, um eine realistische Oberfläche zu erzeugen.
+    
+    3. **3D-Transformationen:** Durch Verwendung von Matrizen werden 3D-Transformationen (Rotation) auf das Modell angewendet.
+    
+    4. **Shader-Filter:** Es gibt die Möglichkeit, einen Graustufenfilter auf die Textur anzuwenden. Die Variable `use_filter` steuert diesen Filter.
+    
+    5. **Pygame-Integration:** Pygame wird verwendet, um ein interaktives Fenster zu erstellen und die Rotation der Kugel zu ermöglichen. Das Fenster wird in OpenGL gerendert.
+    
+    ### Shader:
+    
+    Die Shader sind in GLSL geschrieben und ermöglichen die Beleuchtung des 3D-Objekts. Der Fragment-Shader enthält auch eine Bedingung (`if (uUseFilter)`) für den optionalen Graustufenfilter.
+    
+    ### Struktur des Codes:
+    
+    - Die Funktion `load_program` erstellt ein Shader-Programm und verknüpft Vertex- und Fragment-Shader.
+    - `load_shader` lädt einen einzelnen Shader und kompiliert ihn.
+    - `load_texture` lädt eine Textur aus einer Datei und bindet sie an OpenGL.
+    - `perspective` erstellt eine perspektivische Projektionsmatrix.
+    - `rotate` führt eine Rotationsoperation auf dem Modell aus.
+    - `generate_sphere` erstellt die Vertices, Normals und Texcoords für eine Kugel.
+    
+    Die Hauptschleife (`while running`) ermöglicht die Rotation der Kugel und reagiert auf das Schließen des Fensters (`pygame.QUIT`).
+    
+    Insgesamt bietet das Projekt eine praktische Umsetzung grundlegender Konzepte der Computergrafik und OpenGL-Programmierung.</div>
+  <div id="text-4" class="project-description" style="display: none;">Projektbeschreibung:
+
+    Dieses Projekt im Bereich Bildverarbeitung und Computer Vision wurde mithilfe der Programmiersprache Python und der Bibliotheken OpenCV und NumPy entwickelt. Ziel des Projekts ist die Erkennung von Aruco-Markern, Münzen und Lego-Steinen in Bildern oder Videos.
+    
+    ### Umgesetzte Funktionen:
+    
+    1. **Bild- oder Videoverarbeitung:**
+       - Das Programm kann entweder ein Bild von einer Datei (`sys.argv[1]`) oder die Videoaufnahme von einer Kamera verarbeiten.
+       - Die Dimensionen der Kamera sind auf 640x480 Pixel festgelegt (`CAM_WIDTH`, `CAM_HEIGHT`).
+    
+    2. **Papiererkennung:**
+       - Wenn ein Bild angegeben ist, wird versucht, ein A4-Papier in dem Bild zu erkennen.
+       - Hierbei werden Kanten erkannt, Konturen gefunden und das größte Rechteck (vermutlich das A4-Papier) markiert.
+    
+    3. **Münzendetektion:**
+       - Es werden mithilfe der Hough-Transformation Kreise in dem Bild gefunden und markiert.
+       - Der Durchmesser der erkannten Kreise wird gemessen, und anhand bekannter Durchmesser werden Münzarten zugeordnet.
+       - Die erkannten Münzen werden auf dem Bild markiert, ihre Münzart wird ausgegeben, und die Gesamtsumme in Euro wird berechnet.
+    
+    4. **Aruco-Markererkennung:**
+       - Falls ein Bild als Eingabe dient, werden Aruco-Marker erkannt und auf dem Bild markiert.
+       - Es wird die Breite der Aruco-Marker in Pixel und deren Breite in Millimetern berechnet.
+    
+    5. **Perspektivische Entzerrung:**
+       - Wenn ein A4-Papier erkannt wird, erfolgt eine perspektivische Entzerrung des Bildes, um eine klare Ansicht des Papiers zu erhalten.
+    
+    6. **Lego-Steinerkennung:**
+       - Das Programm führt eine Farbsegmentierung im HSV-Farbraum durch, um graue, orangefarbene und gelbe Lego-Steine zu erkennen.
+       - Es werden Konturen gefunden und auf dem Bild markiert.
+       - Die Anzahl der erkannten Lego-Steine jeder Farbe wird ausgegeben.
+    
+    ### Code-Struktur:
+    
+    - Der Code enthält Blöcke für die Verarbeitung von Bildern und Videos, abhängig von den Eingabeparametern.
+    - Es gibt Blöcke für die Papiererkennung, Münzendetektion, Aruco-Markererkennung, perspektivische Entzerrung und Lego-Steinerkennung.
+    - Funktionen wie `count_brick_contours` zählen die Anzahl der erkannten Lego-Steine.
+    - Der Code verwendet verschiedene Techniken wie Kantenerkennung, Hough-Transformation, HSV-Farbraumsegmentierung und perspektivische Transformation.
+    
+    Insgesamt bietet das Projekt eine praktische Anwendung von Bildverarbeitungs- und Computer-Vision-Techniken, um verschiedene Objekte in Bildern oder Videos zu erkennen und zu analysieren.</div>
+</div>
 
 
 <script src="../projects/js/script.js"></script>
