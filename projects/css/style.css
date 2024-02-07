@@ -673,14 +673,26 @@ body {
 }
 
 .project-description {
-  display: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.2em;
-  margin-top: 88vmin;
-  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  background-color: #ffffff; /* Hintergrundfarbe der Karte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Karte */
+  border-radius: 8px; /* Runde Ecken für die Karte */
+  max-width: 800px; /* Maximale Breite der Karte */
+  width: 80%; /* Anpassen der Breite nach Bedarf */
   font-family: "Open Sans", sans-serif;
- }
+  transition: transform 0.3s ease-in-out;
+}
 
  .video.expanded ~ .project-description {
   display: block;
+ }
+
+ .project-text{
+    margin-top: 25rem;
  }
