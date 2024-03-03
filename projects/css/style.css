@@ -669,30 +669,36 @@ body {
 .expanded {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
-  object-fit: contain; /* Added this line */
+  object-fit: contain; 
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 50rem;
 }
 
 .project-description {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: justify;
+  text-align-last: none;
   font-size: 1.2em;
   padding: 20px;
-  background-color: #ffffff; /* Hintergrundfarbe der Karte */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für die Karte */
-  border-radius: 8px; /* Runde Ecken für die Karte */
-  max-width: 800px; /* Maximale Breite der Karte */
-  width: 80%; /* Anpassen der Breite nach Bedarf */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px;
+  width: 80%;
   font-family: "Open Sans", sans-serif;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Optional: Fügt Abstand zwischen den Beschreibungen hinzu */
 }
 
- .video.expanded ~ .project-description {
+.video.expanded ~ .project-description {
   display: block;
- }
+}
 
- .project-text{
-    margin-top: 25rem;
- }
+.project-text {
+  margin-top: 50rem;
+}

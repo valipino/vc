@@ -62,6 +62,7 @@ window.onmousemove = e => {
 
 let videos = document.querySelectorAll('.video');
 let texts = document.querySelectorAll('.project-description');
+let x = 0;
 
 // Function to collapse all videos
 function collapseAllVideosAndHideAllTexts() {
@@ -76,17 +77,25 @@ videos.forEach((video, index) => {
  video.addEventListener('click', (event) => {
      // Stop the event from bubbling up to the document
      event.stopPropagation();
-
-     // Remove the 'expanded' class from all videos
-     collapseAllVideosAndHideAllTexts();
-     // Add the 'expanded' class to the clicked video
-     video.classList.add('expanded');
-     texts[index].style.display = 'block';
+     if (!video.classList.contains('expanded')) {
+      if(x==0){
+        video.classList.add('expanded');
+      texts[index].style.display = 'block';
+      x+=1;
+      console.log(x)
+      }
+      else{collapseAllVideosAndHideAllTexts();
+        console.log("blabla222")
+        x=0;}
+      
+  } 
  });
 });
 
 // Event listener for document clicks
 document.addEventListener('click', () => {
  // Collapse all videos
+ x=0;
  collapseAllVideosAndHideAllTexts();
+
 });
