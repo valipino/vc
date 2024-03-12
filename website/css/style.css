@@ -71,8 +71,7 @@ section {
 
 
 .language,
-.programming-languages,
-.general-skills {
+.programming-languages {
   list-style-type: none;
   padding: 0;
   margin-bottom: 10px;
@@ -851,4 +850,38 @@ p1{
   padding-bottom: 12px;
   background-color: #cecece;
   color: #1c1c1c;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.contentSkill {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
 }

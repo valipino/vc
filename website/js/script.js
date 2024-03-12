@@ -72,3 +72,19 @@ var wordflick = function () {
 $(document).ready(function () {
   wordflick();
 });
+
+
+var coll = document.getElementsByClassName("collapsible");
+var z;
+
+for (z = 0; z < coll.length; z++) {
+  coll[z].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
