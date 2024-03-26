@@ -797,6 +797,14 @@ line-height: 60px;
   margin-right: 10%;
 }
 
+body.light-mode .skillbar {
+  width: 80%; /* Full width */
+  background-color: #1c1c1c; /* Grey background */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
 .skills {
   text-align:center; /* Right-align text */
   padding-top: 10px; /* Add top padding */
@@ -852,6 +860,13 @@ p1{
   color: #1c1c1c;
 }
 
+body.light-mode .languagestable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #1c1c1c;
+  color: #cecece;
+}
+
 .collapsible {
   background-color: #eee;
   color: #444;
@@ -874,6 +889,7 @@ p1{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  color:#1c1c1c
 }
 .collapsible:after {
   content: '\02795';
@@ -884,4 +900,8 @@ p1{
 }
 .active:after {
   content: "\2796";
+}
+
+body.light-mode h2, body.light-mode h3{
+  color: #1c1c1c;
 }
