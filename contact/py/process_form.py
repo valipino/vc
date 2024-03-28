@@ -14,7 +14,7 @@ app.config['MAIL_DEBUG'] = True
 
 mail = Mail(app)
 
-@app.route('/submit_form', methods=['POST'])
+@app.route('../contact/py/process_form.py', methods=['POST'])
 def submit_form():
     if request.method == 'POST':
         name = request.form['name']
@@ -35,4 +35,4 @@ def submit_form():
         return redirect('../contact/index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='localhost', port=5000, debug=True)
